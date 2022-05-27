@@ -1,0 +1,25 @@
+{
+  "name": "intro-node",
+  "version": "1.0.0",
+  "description": "introduccion a node js clase 01 UTN",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matias-E-Navarrete/PWI-Nodejs.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Matias-E-Navarrete/PWI-Nodejs/issues"
+  },
+  "homepage": "https://github.com/Matias-E-Navarrete/PWI-Nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

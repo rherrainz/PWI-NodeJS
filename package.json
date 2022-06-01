@@ -4,7 +4,9 @@
   "description": "introduccion a node js clase 01 UTN",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   },
   "homepage": "https://github.com/Matias-E-Navarrete/PWI-Nodejs#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.1"
-  }
+  },
+  "type": "module"
 }

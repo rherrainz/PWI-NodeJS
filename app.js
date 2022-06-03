@@ -1,51 +1,20 @@
 import 'dotenv/config'
 import express from 'express'
+import { userRouter } from './src/routes/user.routes.js'
 
 const app = express()
 
 const PORT = process.env.PORT || 8080
 
 app.use(express.static('public'));
+app.use(express.json())
 
 app.get('/hello', (req, res) => {
     res.send('<h1>Hello World!</h1>')
 })
 
-app.get('/home', (req, res) => res.render('./index'))
+app.use('/users', userRouter)
 
-app.post('/contact', (req, res) => {
-    const data = req.body()
-})
-
-app.get('/user/:userId', (req, res) => {
-    const userId = req.params.userId
-
-    // FindByID(userId)--------------------->
-    // <----------------- Info o error
-    // BK prepara la información para devolverla al Cliente
-    res.send(userFound)
-
-})
-
-app.put('/user/:userId', (req, res) => {
-    const userId = req.params.userId
-
-    // FindByID(userId)--------------------->
-    // <----------------- Info o error
-    // BK prepara la información para devolverla al Cliente
-    res.send(userFound)
-
-})
-
-app.delete('/user/:userId', (req, res) => {
-    const userId = req.params.userId
-
-    // FindByID(userId)--------------------->
-    // <----------------- Info o error
-    // BK prepara la información para devolverla al Cliente
-    res.send(userFound)
-
-})
 
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)

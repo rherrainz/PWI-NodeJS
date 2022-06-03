@@ -7,6 +7,7 @@ const app = express()
 const PORT = process.env.PORT || 8080
 
 app.use(express.static('public'));
+app.use(express.json())
 
 app.get('/hello', (req, res) => {
     res.send('<h1>Hello World!</h1>')

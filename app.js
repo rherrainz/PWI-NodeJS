@@ -1,6 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import { userRouter } from './src/routes/user.routes.js'
+import { productsRouter } from './src/routes/product.routes.js'
 
 const app = express()
 
@@ -14,6 +15,7 @@ app.get('/hello', (req, res) => {
 })
 
 app.use('/users', userRouter)
+app.use('/products', productsRouter)
 
 
 app.listen(PORT, () => {

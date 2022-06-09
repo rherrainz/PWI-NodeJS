@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "description": "cafe molido",
+      "brand": "cabrales",
+      "content": "500",
+      "um": "gr",
+      "stock": "500",
+      "cost": "699",
+      "price": "999"
+    },
+    {
+      "id": 2,
+      "description": "cafe en granos",
+      "brand": "la virginia",
+      "content": "1",
+      "um": "kgr",
+      "stock": "20",
+      "cost": "1299",
+      "price": "1999"
+    },
+    {
+      "id": 3,
+      "description": "cafe torrado",
+      "brand": "la morenita",
+      "content": "250",
+      "um": "gr",
+      "stock": "209",
+      "cost": "299",
+      "price": "399"
+    }
+  ]

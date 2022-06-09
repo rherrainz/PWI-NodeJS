@@ -4,7 +4,6 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-
 const userFilePath = path.join(__dirname, '../database/users.json')
 
 export const findUsersController = () => {
@@ -54,6 +53,5 @@ export const updateUserController = (id,data) => {
         }
     }
     fs.writeFileSync(userFilePath, JSON.stringify(users))    
-return ("El usuario ",id," ha sido actualizado") 
-
+    return ("El usuario ",id," ha sido actualizado") 
 }
